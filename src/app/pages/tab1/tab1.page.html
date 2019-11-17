@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>tab1</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row *ngFor="let item of data; let i=index;">
+      <ion-card (click)="submit(i)">
+        <ion-card-content>
+          <ion-row>
+            <ion-col size="6">
+              <ion-card-title>{{item.title}}</ion-card-title>
+              <ion-card-subtitle>{{item.description}}</ion-card-subtitle>
+            </ion-col>
+            <ion-col size="6">
+              <img src="../../assets/{{item.image}}" />
+            </ion-col>
+          </ion-row>
+          <br>
+          <h1> RM {{item.price}}</h1>
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+  </ion-grid>
+</ion-content>
