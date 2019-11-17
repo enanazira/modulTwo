@@ -1,9 +1,30 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>view</ion-title>
+      <ion-buttons slot ="start">
+          <ion-back-button defaultHref="/"></ion-back-button>
+        </ion-buttons>
+    <ion-title>{{data.title}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
-</ion-content>
+    <ion-grid>
+      <ion-row >
+        <ion-card >
+          <ion-card-content>
+            <ion-row>
+              <ion-col size="6">
+                <ion-card-title>{{data.title}}</ion-card-title>
+                <ion-card-subtitle>{{data.description}}</ion-card-subtitle>
+              </ion-col>
+              <ion-col size="6">
+                <img src="../../assets/{{data.image}}" />
+              </ion-col>
+            </ion-row>
+            <br>
+            <h1> RM {{data.price}}</h1>
+          </ion-card-content>
+        </ion-card>
+      </ion-row>
+    </ion-grid>
+  </ion-content>

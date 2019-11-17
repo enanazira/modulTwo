@@ -1,5 +1,7 @@
 {
   "name": "modulTwo",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
